@@ -1,0 +1,277 @@
+/**
+ * Базовые стили для всего сайта
+ */
+body {
+	position: relative;
+
+	box-sizing: border-box;
+
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #000;
+	min-width: 320px;
+	overflow-x: hidden;
+	height: auto;
+	width: 100%;
+	background: url(https://www.pixel4k.com/wp-content/uploads/2019/03/abstract-minimal-blur-4k_1551646032.jpg.webp) center no-repeat;
+	-moz-background-size:cover;
+    -webkit-background-size:cover;
+    -o-background-size:cover;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: fixed;
+	background-color: #082141;
+
+	/**background: linear-gradient(-45deg, #7844C1, #7844C1, #0967E1, #0967E1);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;*/
+}
+
+/**html, body {
+    width: 100%;
+    height:100%;
+}*/
+
+/**@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}*/
+
+
+
+/**
+ * Другие стили
+ */
+
+.header{
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	min-height: 80px;
+/* 	background-color: black; */
+	color: #fff;
+	backdrop-filter: blur(20px) brightness(60%) drop-shadow(4px 4px 10px blue);
+	height: 130px;
+}
+
+.wrap{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.main{
+/* 	background-color: gray; */
+}
+
+.footer{
+    width: 100%;
+	min-height: 1000px;
+/* 	background: #fff; */
+/* 	color: black; */
+	padding: 20px;
+}
+
+.container{
+	height: 450px;
+/* 	border: 5px solid black; */
+	border-radius: 20px;
+}
+
+.image img{
+	height: 500px;
+	object-fit: cover;
+	border: 10px;
+	border-radius: 10px;
+	max-width: 100%;
+	box-shadow: 0 0 0 5px black;
+}
+
+img {
+	transition: transform 0.5s;
+}
+
+.image:hover img{
+	transform: scale(1.04);
+}*
+
+.info h3{
+	font-size: 21px;
+	margin-top: 30px;
+	color: #fff;
+}
+
+.info-price{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+}
+
+.add-to-cart{
+	border: none;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #D10091;
+	color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 0 2px black;
+}
+
+.price{
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.image_btn{
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 0 0 10px solid black;
+	margin-top: 20px;
+}
+
+.down{
+	margin-top: 30px;
+	width: 100%;
+	height: 300px;
+}
+
+.lincs{
+	margin-top: 40px;
+	padding-right: 20px;
+}
+
+.site-title-d{
+	margin-top: 20px;
+}
+
+.line{
+	height: 10px;
+	width:100%;
+	background: black;
+	margin-top: 30px;
+}
+
+
+
+ /* Dropdown Button */
+.dropbtn {
+    position: relative;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #EFA9F9, #8EE9EC, #EFA9F9, #8EE9EC);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    margin-top: 10px;
+}
+
+.dropbtn1 {
+    margin-top: 20px;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #8EECA8, #8EB2EC, #8EB2EC, #8EECA8);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.dropbtn:hover{
+    box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
+}
+
+.dropbtn1:hover{
+    box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    color: white;
+    min-width: 160px;
+    border: 5px;
+    border-radius: 20px;
+    box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 20px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+.mainbtn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+}
+
+.inform{
+    margin-top: 40px;
+}
+
+/* Шапка с изображением */
+.jumbotron {
+  width: 100%;
+  height: 400px;
+/*  padding-top: 120px;*/
+  background-image: url('123.jpg');
+  background-size: cover;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+.jumbotron p {
+  font-size: 1.5em;
+}
+
+.jumbotron .btn-primary {
+  background-color: #428bca;
+  border-color: #357ebd;
+}
