@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Bootstrap reboot (для сброса стилей) -->
+	<link rel="stylesheet" href="libs/bootstrap-reboot.min.css">
+
+	<!-- Bootstrap сетка -->
+	<link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+
+	<!-- Шрифты с Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+	<!-- Стили сайта -->
+	<link rel="stylesheet" href="styles.css">
+
+<title>MirShop</title>  </head>
+  <body>
+
+    <script src="check.js"></script>
+
+	<div class="header">
+		<div class="wrap">
+			<h1 class="site-title">MirShop</h1>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="wrap">
+		    Заполните все доступные поля ввода
+		</div>
+		<div class="container mt-5">
+			<div class="row">
+			    <form method="post" name="name" action="save.php">
+				<div class="col-md-3">
+					<div class="product">
+						<div class="formus">
+                            <label>Имя: </label>
+                            <div>
+                                <input type="text" name="name" class="putName" required onkeyup='checkParams()' legth=64>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<form method="post" name="fname" action="save.php">
+				<div class="col-md-3">
+					<div class="product">
+						<div class="formus">
+                            <label>Фамилия: </label>
+                            <div>
+                                <input type="text" name="fname" class="putFname" required onkeyup='checkParams()' legth=64>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<form method="post" name="email" action="save.php">
+				<div class="col-md-3">
+					<div class="product">
+						<div class="formus">
+                            <label>Адрес електронной почты: </label>
+                            <div>
+                                <input type="text" name="email" class="putEmail" required onkeyup='checkParams()' legth=64>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<form method="post" name="pass" action="save.php">
+				<div class="col-md-3">
+					<div class="product">
+						<div class="formus">
+                            <label>Пароль: </label>
+                            <div>
+                                <input type="text" name="pass" class="putPass" required onkeyup='checkParams()' legth=64>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<form method="post" name="region" action="save.php">
+				<div class="col-md-3">
+					<div class="product">
+						<div class="formus">
+                            <label>Область: </label>
+                            <div>
+                                <input type="text" name="region" class="putRegion" required onkeyup='checkParams()' legth=64>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<form method="post" name="city" action="save.php">
+				<div class="col-md-3">
+					<div class="product">
+						<div class="formus">
+                            <label>Город: </label>
+                            <div>
+                                <input type="text" name="city" class="putCity" required onkeyup='checkParams()' legth=64>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<form method="post" name="number" action="save.php">
+				<div class="col-md-3">
+					<div class="product">
+						<div class="formus">
+                            <label>Номер отделения почты: </label>
+                            <div>
+                                <input type="text" name="number" class="putNumber" required onkeyup='checkParams()' legth=64>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<form method="post" name="home" action="save.php">
+				<div class="col-md-3">
+					<div class="product">
+						<div class="formus">
+                            <label>Домашний адрес: </label>
+                            <div>
+                                <input type="text" name="home" class="putHome" required onkeyup='checkParams()' legth=64>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<form method="post" name="phone" action="save.php">
+				<div class="col-md-3">
+					<div class="product">
+						<div class="formus">
+                            <label>контактный номер телефона: </label>
+                            <div>
+                                <input type="text" name="phone" class="putPhone" required onkeyup='checkParams()' legth=64>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<form method="post" name="postalcode" action="save.php">
+				<div class="col-md-6">
+					<div class="product">
+						<div class="formus">
+                            <label>Почтовый индекс: </label>
+                            <div>
+                                <input type="text" name="postalcode" class="putPostalcode" required onkeyup='checkParams()' legth=64>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="product">
+						<div class="image_n">
+							<div class="image">
+								<img src="https://c.dns-shop.ru/thumb/st4/fit/500/500/fa6e2a7b27cd1cf6947f0f5d533d12f6/b0bb8408e28a733b6d87297d45707aee13dab251593eb83d33b2169a8a7f2422.jpg.webp" alt="">
+							</div>
+						</div>
+						<div class="info">
+							<h4>КРАТКОЕ ОПИСАНИЕ ТОВАРА:<h4>
+							<div class="info_a">
+								<h5>Снегоуборщик аккумуляторный Patriot PE 1001UES с шириной ковша 260 мм станет надежным помощником для уборки снега на небольших участках. Благодаря мощному двигателю и шнековому механизму он способен быстро справляться с уборкой снега. Данная модель обладает дальностью выброса 6 метров. Ковш изготовлен из высокопрочного пластика, поэтому устойчив к повреждениям и неблагоприятным внешним воздействиям. В качестве источника автономной работы может использоваться аккумулятор с напряжением 21 В. Эргономичная рукоятка с двумя держателями обеспечивает комфортное управление оборудованием Patriot PE 1001UES.</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+                <form action="" onSubmit="window.open=('card.html')">
+				<input type="submit" class="btn" value="Подтвердить" name="submit" action="save.php">
+			</form>
+			<div class="line">
+
+			</div>
+			</div>
+		</div>
+	</div>
+
+  </body>
+</html>

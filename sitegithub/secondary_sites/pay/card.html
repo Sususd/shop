@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+
+        <!-- Bootstrap reboot (для сброса стилей) -->
+        <link rel="stylesheet" href="libs/bootstrap-reboot.min.css">
+
+        <!-- Bootstrap сетка -->
+        <link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+
+        <!-- Шрифты с Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+        <!-- Стили сайта -->
+        <link rel="stylesheet" href="css/styles.css">
+
+<title>MirShop</title>    </head>
+
+    <body>
+
+    <script src="checkcard.js"></script>
+
+    <div class="header">
+		<div class="wrap">
+			<h1 class="site-title">MirShop</h1>
+		</div>
+	</div>
+
+<div class="footer">
+	<div class="wrap">
+		   Заполните все доступные поля ввода
+	</div>
+    <div class="container-mt5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="images">
+                    <div class="image">
+                        <img src="images1/index-1.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="images">
+                    <div class="image">
+                        <img src="images1/index-2.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="images">
+                    <div class="image">
+                        <img src="images1/index-3.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+
+                <form class="credit-card" method="post" action="cardsave.php">
+                    <div class="form-header">
+                        <h4 class="title"></h4>
+                    </div>
+                    <div class="form-body">
+                            <!-- Card Number -->
+                        <form method="post" name="card" action="cardsave.php">
+                        <input type="text" name="card" class="card-number" placeholder="Card Number" onkeyup='checkParams()' required>
+                            <!-- Date Field -->
+                            <div class="date-field">
+                                <div class="row">
+                                    <div class="col-md-1">
+                                        <div class="month">
+                                            <form method="post" name="date" action="cardsave.php">
+                                           <input type="text" name="date" class="putDate" placeholder="Card Date" onkeyup='checkParams()' required>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- Card Verification Field -->
+                            <div class="card-verification">
+                                <div class="cvv-input">
+                                    <form method="post" name="cvv" action="cardsave.php">
+                                    <input type="text" name="cvv" class="putCvv" placeholder="CVV" onkeyup='checkParams()' required>
+                                </div>
+                                <div class="cvv-details">
+
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <form action="" onSubmit="window.open=('last.html')">
+				            <input type="submit" class="btn" value="Оплатить" name="submit" action="cardsave.php">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+</html>

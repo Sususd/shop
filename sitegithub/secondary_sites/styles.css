@@ -1,0 +1,141 @@
+/**
+ * Базовые стили для всего сайта
+ */
+body {
+	position: relative;
+
+	box-sizing: border-box;
+
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #000;
+	min-width: 320px;
+	overflow-x: hidden;
+	height: auto;
+	background: url(https://www.pixel4k.com/wp-content/uploads/2019/03/abstract-minimal-blur-4k_1551646032.jpg.webp) center no-repeat;
+	-moz-background-size:cover;
+    -webkit-background-size:cover;
+    -o-background-size:cover;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: fixed;
+	background-color: #082141;
+}
+
+html, body {
+    width: 100%;
+    height:100%;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+/**
+ * Другие стили
+ */
+.header{
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	min-height: 80px;
+/* 	background-color: black; */
+	color: #fff;
+	backdrop-filter: blur(20px) brightness(60%) drop-shadow(4px 4px 10px blue);
+	height: 130px;
+}
+
+.wrap{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.main{
+
+
+}
+
+.footer{
+	min-height: 200px;
+	color: black;
+	padding: 20px;
+}
+
+.image_n{
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.image img{
+	height: 500px;
+	object-fit: cover;
+	border: 10px;
+	border-radius: 10px;
+	width: 100%;
+	box-shadow: 0 0 0 5px black;
+}
+
+img {
+	transition: transform 0.5s;
+}
+
+.image:hover img{
+	transform: scale(1.05);
+}
+
+.buy{
+	border: none;
+	width: 100px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #EB0078;
+	color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 0 2px black;
+}
+
+.info-price{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+
+.info_a{
+	margin-top: 20px;
+}
+
+.down{
+	width: 100%;
+	height: 300px;
+	background-color: black;
+	color: #fff;
+}
+
+.lincs{
+	margin-top: 40px;
+	padding-right: 20px;
+}
+
+.site-title-d{
+	margin-top: 20px;
+}
+
+ /* Dropdown Button */
+.dropbtn {
+    margin-top: 20;
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
